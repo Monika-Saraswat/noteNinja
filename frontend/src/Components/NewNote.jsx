@@ -1,8 +1,11 @@
 import React,{useState} from 'react'
+import { Link } from 'react-router-dom'
+import useNotein from '../hooks/useNotein';
 
 const NewNote = () => {
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");
+    const {loading, notein} = useNotein();
 
     const handleSubmit = async(e)=>{
         e.preventDefault();
