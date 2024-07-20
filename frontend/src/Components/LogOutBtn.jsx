@@ -10,7 +10,7 @@ const LogOutBtn = () => {
     <div className='mt-auto'>
       {
         !loading?(
-          <BiLogOutCircle className='w-6 h-6 cursor-pointer text-cyan-900' onClick={logout}/>
+          <span className='flex gap-2'><BiLogOutCircle className='w-6 h-6 cursor-pointer text-cyan-900' onClick={logout}/>Logout</span>
         ):(
           <span className='loading loading-spinner'></span>
         )

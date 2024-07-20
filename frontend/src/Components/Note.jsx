@@ -2,12 +2,10 @@ import React from 'react'
 
 const Note = () => {
   return (
-    <div className="card bg-warning text-warning-content w-50">
+    <div className="card bg-accent text-accent-content w-50">
         <div className="card-body">
             <h2 className="card-title">Note</h2>
             <p>Nore desc</p>
-            <h3>Author:</h3>
-            <h4>Last updated by:</h4>
         </div>
     </div>
   )
