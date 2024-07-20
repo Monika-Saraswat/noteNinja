@@ -4,7 +4,7 @@ import AllNotes from '../Components/AllNotes.jsx'
 
 const Home = () => {
   return (
-    <div className='flex h-screen w-screen rounded-lg overflow-hidden bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 shadow-md align-middle items-center'>
+    <div className='flex sm:h-[450px] md:h-[550px] rounded-lg overflow-hidden bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 shadow-md'>
       <AllNotes/>
       <LogOutBtn/>
     </div>
