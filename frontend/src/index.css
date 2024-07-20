@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-    background: black /*linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../public/bg3.avif")*/ ;
+    background: #ecfeff /*linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../public/bg3.avif")*/ ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
