@@ -25,12 +25,21 @@ io.on('connection',(socket)=>{
     if(userId!== undefined){
         userSocketMap[userId]=socket.id;
     }
-
     // socket.on is used for listening the events. It can be used on both client and server side
     socket.on("disconnect",()=>{
         // console.log("user diconnected",socket.id);
         delete userSocketMap[userId];
     })
+
+    socket.on("note", (data) => {
+        socket.join(data);
+        console.log(`User ${socket.id} joined room: ${data}`);
+      });
+    
+      socket.on("send_message", (data) => {
+        io.in(data.room).emit("receive_message", data);
+        console.log(`Message sent to room ${data.room}: ${data.message}`);
+      });
 })
 
 
