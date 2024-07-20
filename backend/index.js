@@ -26,7 +26,7 @@ app.use('/api/auth',authRoutes);
 
 const PORT = process.env.PORT || 5000;
 
-mongoose.connect('mongodb://127.0.0.1:27017/noteNinja')
+mongoose.connect('mongodb+srv://saraswatmonika55:noteninja@cluster0.dvivdh4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then(()=>{
     console.log("DB connected");
 })
